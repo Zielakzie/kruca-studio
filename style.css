@@ -60,17 +60,22 @@ section {
     color: #FFD700;
 }
 
-.about-us p {
-    max-width: 1200px;
+.about-us {
+    display: flex;
+    flex-direction: column;
     margin: auto;
+    max-width: 1200px;
+}
+
+.about-us p {
+    margin: 20px;
 }
 
 #signature {
     font-size: 20px;
-    /* FIXME: */
-    float: right;
+    align-self: flex-end;
     margin-top: 25px;
-    margin-right: 20%;
+    margin-right: 20px;
 
 }
 
@@ -94,7 +99,6 @@ section {
         width: 100%;
         flex-direction: row;
         flex-wrap: no-wrap;
-        /* TODO: swipable on mobile, but hidden scrollbar */
         overflow-x: scroll;
         cursor: pointer;
 
