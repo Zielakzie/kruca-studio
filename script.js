@@ -52,28 +52,28 @@ const galleryItems = [
 
 galleryItems.forEach((i) => {
 
-    const sectionCountdownSelector = document.querySelector('#gallery');
+    const gallery = document.querySelector('#gallery');
 
     const docFragment = document.createDocumentFragment();
-    const divElement = document.createElement('div');
-    divElement.setAttribute('class', 'gallery-item');
 
-    const imageElement = document.createElement('img');
-    imageElement.src = i.file;
+    const galleryItem = document.createElement('div');
+    galleryItem.setAttribute('class', 'gallery-item');
 
-    const divHeadingElement = document.createElement('div');
-    divHeadingElement.setAttribute('class', 'gallery-item-title');
+    const galleryItemImg = document.createElement('img');
+    galleryItemImg.src = i.file;
 
-    const headingElement = document.createElement('h3');
-    headingElement.innerHTML = i.title;
+    const galleryDescription = document.createElement('div');
+    galleryDescription.setAttribute('class', 'gallery-item-title');
 
-    docFragment.appendChild(divElement);
-    docFragment.appendChild(divHeadingElement);
-    divElement.appendChild(imageElement);
-    divElement.appendChild(divHeadingElement);
-    divHeadingElement.appendChild(headingElement);
+    const itemTitle = document.createElement('h3');
+    itemTitle.innerHTML = i.title;
 
-    sectionCountdownSelector.appendChild(docFragment);
+    docFragment.appendChild(galleryItem);
+    galleryItem.appendChild(galleryItemImg);
+    galleryItem.appendChild(galleryDescription);
+    galleryDescription.appendChild(itemTitle);
+
+    gallery.appendChild(docFragment);
 
 });
 
