@@ -1,0 +1,130 @@
+/* font-family: 'Merriweather', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: #0B0B0B;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 90px 0;
+}
+
+em {
+    color:#FFD700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.page-wrap {
+    max-width: 1920px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.baner-top img {
+    width: 100%;
+    height: auto;
+}
+
+.short-description {
+    text-align: center;
+}
+
+.short-description p {
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 48px;
+}
+
+.short-description p::before {
+    content: ">";
+    margin-right: 20px;
+    color: #FFD700;
+}
+
+.about-us p {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#signature {
+    font-size: 20px;
+    /* FIXME: */
+    float: right;
+    margin-top: 25px;
+    margin-right: 20%;
+
+}
+
+/* TODO: .about-us border */
+@media screen and (min-width: 768px) {
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #gallery {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        /* TODO: swipable on mobile, but hidden scrollbar */
+        overflow-x: scroll;
+        cursor: pointer;
+
+    }
+
+}
+
+.gallery-item {
+    margin: 20px;
+
+}
+.gallery-item img{
+    width: 460px;
+    height: auto;
+    margin: 0;
+
+
+}
+
+.gallery-item-title {
+    margin-top: -5px;
+    max-width: 460px;
+    height: 87px;
+    background-color: #F9F8F4;
+
+}
+
+.gallery-item-title h3 {
+    margin: 0;
+    margin-left: 20px;
+    color: #0B0B0B;
+
+}
