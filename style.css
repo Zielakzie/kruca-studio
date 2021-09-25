@@ -64,6 +64,7 @@ section {
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-bottom: 60px;
     max-width: 1200px;
 }
 
@@ -130,5 +131,69 @@ section {
     margin: 0;
     margin-left: 20px;
     color: #0B0B0B;
+
+}
+
+.contact {
+    background-color: #fff;
+    max-width: 100%;
+    /* height: 500px; */
+    padding: 25px;
+    margin-bottom: 0;
+}
+
+.contact a {
+    color: #0B0B0B;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.contact h2 {
+    color: #0B0B0B;
+    text-align: center;
+}
+
+.contact-items-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+
+.contact-item img{
+    width: 50px;
+    height: 50px;
+
+}
+
+@media screen and (max-width: 1009px) {
+.contact-items-wrap  {
+    flex-direction: column;
+
+}
+.contact-item {
+    flex-direction: row;    
+}
+
+}
+
+@media screen and (min-width: 1010px) {
+.contact-items-wrap  {
+    flex-direction: row;
+
+}
+
+.contact-item {
+    flex-direction: column;    
+
+}
 
 }
