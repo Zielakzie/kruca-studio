@@ -155,7 +155,7 @@ section {
 
     #gallery-nav {
         height: 416px;
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 94%, #0B0B0B 100%);
+        background: linear-gradient(90deg, rgba(11,11,11,0) 0%, rgba(11,11,11,1) 94%, rgba(11,11,11,1) 100%);
         width: 100vw;
         display: block;
         position: absolute;
