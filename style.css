@@ -16,9 +16,26 @@ body {
 h2 {
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
+
+}
+@media screen and (min-width: 768px) {
+   
+   h2{
     font-size: 40px;
     margin: 90px 0;
 }
+
+}
+    @media screen and (max-width: 767px) {
+        h2{
+            font-size: 30px;
+            margin: 30px 0;
+        }
+    }   
+
+
+
+
 
 em {
     color:#FFD700;
@@ -47,12 +64,29 @@ section {
 .short-description {
     text-align: center;
 }
-
 .short-description p {
-    font-size: 25px;
     text-transform: uppercase;
-    line-height: 48px;
 }
+@media screen and (min-width: 768px) {
+   
+    .short-description p {
+        font-size: 25px;
+        line-height: 48px;
+
+    }
+ 
+ }
+     @media screen and (max-width: 767px) {
+
+        .short-description p {
+            font-size: 20px;
+            line-height: 35px;            
+
+        }
+     }  
+
+
+
 
 .short-description p::before {
     content: ">";
@@ -144,9 +178,35 @@ section {
 
 .contact a {
     color: #0B0B0B;
-    font-size: 25px;
     text-transform: uppercase;
-    margin: 20px;
+
+}
+
+@media screen and (min-width: 1010px) {
+    .contact a {
+        font-size: 25px;
+        margin: 20px;
+    }
+    .contact-item img{
+        width: 50px;
+        height: 50px;
+    
+    }
+       
+}
+
+@media screen and (max-width: 1009px) {
+    .contact a {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .contact-item img{
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+    
+    }
+       
 }
 
 .contact h2 {
@@ -168,15 +228,12 @@ section {
 
 
 
-.contact-item img{
-    width: 50px;
-    height: 50px;
 
-}
 
 @media screen and (max-width: 1009px) {
 .contact-items-wrap  {
     flex-direction: column;
+    align-items: center;
 
 }
 .contact-item {
