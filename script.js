@@ -76,9 +76,14 @@ galleryItems.forEach((i) => {
 
 });
 
-// Hide navigation tip mobile 
-//FIXME:should hide on slide 
+
+
+document.addEventListener('swiped-left', function (e) {
+    document.getElementById("gallery-nav").style.display = "none";
+
+});
+
+
 function navHide() {
     document.getElementById("gallery-nav").style.display = "none";
 }
-
