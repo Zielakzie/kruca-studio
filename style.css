@@ -149,7 +149,6 @@ section {
         flex-direction: row;
         overflow-x: scroll;
         scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
         cursor: pointer;
 
     }
