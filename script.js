@@ -78,12 +78,21 @@ galleryItems.forEach((i) => {
 
 
 
+// FIXME: should listen to swipe only on gallery div
+
 document.addEventListener('swiped-left', function (e) {
     document.getElementById("gallery-nav").style.display = "none";
+    document.getElementById("gallery").scrollLeft = 260;
+    document.getElementById("gallery").style.scrollBehavior = "auto";
+
 
 });
 
 
 function navHide() {
     document.getElementById("gallery-nav").style.display = "none";
+    document.getElementById("gallery").scrollLeft = 260;
+    document.getElementById("gallery").style.scrollBehavior = "auto";
+
+
 }
