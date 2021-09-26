@@ -49,7 +49,6 @@ const galleryItems = [
 
 ];
 
-
 galleryItems.forEach((i) => {
 
     const gallery = document.querySelector('#gallery');
@@ -76,4 +75,10 @@ galleryItems.forEach((i) => {
     gallery.appendChild(docFragment);
 
 });
+
+// Hide navigation tip mobile 
+//FIXME:should hide on slide 
+function navHide() {
+    document.getElementById("gallery-nav").style.display = "none";
+}
 
