@@ -1,3 +1,5 @@
+// GALLERY
+
 /* Put new images in galleryItems */
 
 const galleryItems = [
@@ -96,3 +98,21 @@ function navHide() {
 
 
 }
+
+// ANIMATION OBSERVER
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const shortDescription = entry.target.querySelector('.short-description');
+  
+      if (entry.isIntersecting) {
+        shortDescription.classList.add('short-description-animation');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      shortDescription.classList.remove('short-description-animation');
+    });
+  });
+  
+  observer.observe(document.querySelector('.short-description-wrapper'));
